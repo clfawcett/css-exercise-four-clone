@@ -12,51 +12,52 @@ body {
   width: 100%;
 }
 
-h1 {
-  font-size: 2em;
+.preview h1 {
+  font-size: 2.4em;
+  padding: 10%;
+  text-align: left;
 }
 
-div {
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  float:left;
-  margin: 2% 0;
-  padding: 9% 8% 60% 8%;
+.preview {
+  height: 300px;
+  margin: 2em 0;
   width: 100%;
 
 }
 
 /*----------------- Container -----------------*/
 
-.page-title {
+.title {
   font-family: sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
   letter-spacing: 0.3em;
-  margin: 7% 0 5% 0;
+  margin: 2.5em 0;
   text-align:center;
   text-transform: uppercase;
 }
 
-.preview-baku {
-  background-image: url(../images/baku.jpg);
+.baku {
+  background-image: url(/images/baku.jpg);
   background-position: left;
+  background-size: cover;
 }
 
-.preview-london {
-  background-image: url(../images/london.png);
+.london {
+  background-image: url(/images/london.png);
   background-position: right;
+  background-size: cover;
 }
 
-.preview-madrid {
-  background-image: url(../images/madrid.jpg);
+.madrid {
+  background-image: url(/images/madrid.jpg);
   background-position: left;
+  background-size: cover;
 }
 
-.preview-rome {
-  background-color: #fff;
-  background-image: url(../images/rome.jpg);
+.rome {
+  background-image: url(/images/rome.jpg);
   background-position: left;
+  background-size: cover;
 }
 
 /*----------------- code added for two-column design -----------------*/
@@ -65,9 +66,10 @@ div {
       width: 80%;
     }
 
-     div {
+     .preview {
+       float: left;
+       height: 20em;
        margin: 1%;
-       padding: 4% 4% 24% 4%;
        width: 48%;
      }
   }
@@ -76,13 +78,14 @@ div {
 
 @media screen and (min-width: 991px) {
   .container {
-    width: 70%;
+    width: 75%;
   }
 
-  div {
-    margin: 1%;
-    padding: 2% 2% 18% 2%;
-    width: 23%;
+  .preview {
+    float: left;
+    height: 20em;
+    margin: 1em;
+    width: 22%;
   }
 
 }
